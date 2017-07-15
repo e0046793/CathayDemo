@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
     
     // MARK: Constant declaration
     fileprivate let refreshControl = UIRefreshControl()
-    fileprivate let CELL_IDENTIFIER = "MovieCell"
     
     // MARK: Variable declaration
     fileprivate var spinner: UIActivityIndicatorView!
@@ -44,7 +43,7 @@ class HomeViewController: UIViewController {
         // NOT a good place to check, however make it simple
         if !Configuration.sharedInstance.checkConfigurationFullySetup() {
             let alertController = UIAlertController(title: NSLocalizedString("Alert", comment: ""),
-                                                    message: "Please config TMDB API Key and Secret in Configuration.plist",
+                                                    message: "Please config TMDB API Key in Configuration.plist",
                                                     preferredStyle: .alert)
             let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
             alertController.addAction(okAction)
@@ -159,7 +158,7 @@ extension HomeViewController {
         spinner.hidesWhenStopped = true
         view.addSubview(spinner)
         
-        title = "Home"
+        // UINavigation
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
