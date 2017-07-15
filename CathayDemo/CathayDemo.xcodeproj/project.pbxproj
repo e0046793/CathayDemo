@@ -311,8 +311,8 @@
 		C0BB1B3F1F160D90009D53EC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C058CC601F17D04C00652BA6 /* Image */,
 				C0BB1B431F160E14009D53EC /* Manager.swift */,
+				C058CC601F17D04C00652BA6 /* Image */,
 				C0BB1B401F160DAE009D53EC /* TMDB */,
 			);
 			path = Managers;

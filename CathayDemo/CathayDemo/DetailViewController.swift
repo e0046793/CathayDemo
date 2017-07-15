@@ -89,7 +89,10 @@ extension DetailViewController {
     
     fileprivate func loadData() {
         MBProgressHUD.hide(for: self.view, animated: true)
-        durationLbl.text = String(format:"%d", (self.movieDetail?.duration)!) +  " minutes"
+        
+        if let duration = self.movieDetail?.duration {
+            durationLbl.text = String(format:"%d", duration) +  " minutes"
+        }
         
         if let languages = self.movieDetail?.languages {
             if (0 == languages.count) {
