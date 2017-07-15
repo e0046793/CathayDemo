@@ -45,4 +45,7 @@ Press Command + U to run all the tests.
         * Language
         * Duration
     2. Book the movie (simulate opening of [this link](http://www.cathaycineplexes.com.sg) in a web view)
-    
+
+## Screenshot
+![Home](https://github.com/e0046793/CathayDemo/blob/master/Screenshot/Home.png)
+![Detail](https://github.com/e0046793/CathayDemo/blob/master/Screenshot/Detail.png)
