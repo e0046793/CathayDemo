@@ -1,4 +1,4 @@
-# CathayDemo
+# FetchMeDemo
 An iOS app that allows user fetch data from TMDB web service
 
 ## Getting Started
