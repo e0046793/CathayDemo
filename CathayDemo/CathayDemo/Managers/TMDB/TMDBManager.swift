@@ -34,7 +34,7 @@ fileprivate struct Key {
     }
     
     struct ParamDefaultValues {
-        static let SortByValue                      = "release_date.desc"
+        static let SortByValue                      = "popularity.desc"
         static let PrimaryReleaseDateLessThanValue  = "2016-12-31"
     }
     
@@ -83,7 +83,7 @@ extension TMDBManager {
             Key.Params.APIKey: TMDBAPIConfiguration.apiKey,
             Key.Params.Page: String(page),
             Key.Params.SortBy: Key.ParamDefaultValues.SortByValue,
-            Key.Params.PrimaryReleaseDateLessThan: Key.ParamDefaultValues.PrimaryReleaseDateLessThanValue
+            //Key.Params.PrimaryReleaseDateLessThan: Key.ParamDefaultValues.PrimaryReleaseDateLessThanValue
         ]
         
         apiService.request(.get,
